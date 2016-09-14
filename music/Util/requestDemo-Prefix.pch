@@ -1,0 +1,55 @@
+//
+//  music-Prefix.pch
+//  music
+//
+//  Created by yunliao on 16/9/13.
+//  Copyright © 2016年 yunliao. All rights reserved.
+//
+
+
+
+/**
+ 
+ 
+  放于各种枚举 宏定义参数 
+ 
+ 
+ */
+
+
+typedef enum
+{
+    PostType,      //post方式请求数据
+    GetType        //get方式请求数据
+}RequestHttpType;
+
+//请求类型  区别每个数据接口的请求
+typedef enum {
+    aApis,
+    bApis
+}RequestHttpServerType;
+
+
+
+#define kClientData                 @"kClientData"                  //客户端请求所需参数
+
+
+
+
+
+
+#import "AFNetworking.h"
+#import "MD5.h"
+#import "MHttpServer.h"
+#ifndef music_Prefix_pch
+#define music_Prefix_pch
+
+
+//接口请求前面地址
+#define MClientMainHttpServer  @"http://app.365liaoba.com/api/4_1_0_2/ssbapi/index.php"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* music_Prefix_pch */
